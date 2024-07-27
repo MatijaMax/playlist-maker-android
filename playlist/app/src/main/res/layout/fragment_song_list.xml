@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText views -->
+    <EditText
+        android:id="@+id/editTextNameSong"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Name" />
+
+    <Spinner
+        android:id="@+id/spinnerSongA"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+ />
+
+    <Spinner
+        android:id="@+id/spinnerSongG"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/buttonAddSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+
+
+        <EditText
+            android:id="@+id/editTextNameSNS"
+            android:layout_width="155dp"
+            android:layout_height="55dp"
+            android:hint="Search by name" />
+
+        <EditText
+            android:id="@+id/editTextNameSSArtist"
+            android:layout_width="155dp"
+            android:layout_height="55dp"
+            android:hint="Search by artist" />
+
+        <EditText
+            android:id="@+id/editTextNameSSGenre"
+            android:layout_width="155dp"
+            android:layout_height="55dp"
+            android:hint="Search by genre" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSearchSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/buttonResetSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
